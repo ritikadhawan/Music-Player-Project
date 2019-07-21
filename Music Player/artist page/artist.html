@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cold Play</title>
+    <link rel="shortcut icon" href="images/musicIcon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Source+Sans+Pro|Ubuntu&display=swap" rel="stylesheet">
+  </head>
+  <body class = "flex-col">
+    <header>
+      <!-- navigation bar -->
+    <nav>
+      <ul class = "navigation-bar flex-row">
+      <!-- ninja sudio symbol -->
+      <li class="ninja-studio-symbol">
+        <i class="fas fa-drum"></i>
+        <span>Ninja Studio</span>
+      </li>
+      <!-- temporary search icon becomes visible in small screens -->
+      <i class="fas fa-search" id = "search-icon"></i>
+      <!-- search panel for rest of the screens -->
+      <li class="search-panel">
+        <form class="header-search-form">
+          <button type="submit" name="button"><i class="fas fa-search"></i></button>
+          <input type="search" name="header-search" id = "header-search" placeholder="Search">
+          <button type="search" name="voice-search-button"><i class="fas fa-microphone"></i></button>
+        </form>
+      </li>
+      <!-- notification bell icon -->
+      <li class="bell-icon">
+        <form class="notification-bell">
+          <button type="button" name="button"><i class="fas fa-bell"></i></button>
+        </form>
+      </li>
+      <!-- user profile image -->
+      <li class="user-profile">
+        <img src="images/rletter.jpg" alt="profile image">
+
+      </li>
+      <!-- icon to access aside section as it becomes hidden -->
+      <li class = "aside-access-icon">
+          <i class="fas fa-bars"></i>
+      </li>
+    </ul>
+    </nav>
+  </header>
+    <!-- main section for content songs and aside section -->
+    <main class = "flex-row">
+      <!-- main content consist of band image and about the band and songs-->
+      <section id = "main-content" class = "flex-col">
+        <!-- section for band image and introduction -->
+        <section id = "display-section" class="flex-row">
+          <!-- band image with hoverable play button -->
+          <div class="display-image play-button">
+            <i class="fas fa-play"></i>
+          </div>
+          <!-- introduction of band -->
+          <div class="display-content flex-col">
+            <!-- name of the band and followers-->
+            <div class="heading-followers flex-row">
+              <div class="heading">
+                <span>COLDPLAY</span>
+                <span>British Band</span>
+              </div>
+              <div class="followers">
+                <span>851 Followers</span>
+              </div>
+            </div>
+            <!-- intro of band -->
+            <div class="content">
+              <p>Coldplay, are an English alternative rock band,
+                formed in London in 1996-1997. Chris Martin, and
+                Jonny Buckland, were looking forward to form a
+                band while at University College London. After
+                forming Pectoralz, Guy Berryman joined the group
+                 as the bass guitarist and they changed their
+                 name to Starfish.</p>
+            </div>
+            <!-- play all button -->
+            <div class="play-all-button flex-row">
+              <div class="pbutton flex-col">
+                <div class="btn">
+                  Play All
+                </div>
+                <div class="info">
+                  247 Tracks | 128 Albums
+                </div>
+              </div>
+              <div class="follow-option">
+                Follow
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+        <!-- section for songs -->
+        <section id = "song-list" class = "flex-col">
+          <!-- song -->
+          <div class="sg flex-row">
+            <p>01</p>
+            <!-- artists image -->
+            <img src="images/shape of you.png" alt="">
+            <!-- song name and name of aritsts -->
+            <div class="song-name-date">
+              <p>Shape Of You</p>
+              <p>ED sheeran</p>
+            </div>
+            <!-- like icon -->
+            <i class="far fa-heart"></i>
+            <!-- add to favourites icon -->
+            <i class="fas fa-plus"></i>
+
+          </div>
+          <!-- song -->
+          <div class="sg flex-row">
+            <p>02</p>
+            <!-- artists image -->
+            <img src="images/shape of you.png" alt="">
+            <!-- song name and name of aritsts -->
+            <div class="song-name-date">
+              <p>Shape Of You</p>
+              <p>ED sheeran</p>
+            </div>
+            <!-- like icon -->
+            <i class="far fa-heart"></i>
+            <!-- add to favourites icon -->
+            <i class="fas fa-plus"></i>
+
+          </div>
+          <!-- song -->
+          <div class="sg flex-row">
+            <p>03</p>
+            <!-- artists image -->
+            <img src="images/shape of you.png" alt="">
+            <!-- song name and name of aritsts -->
+            <div class="song-name-date">
+              <p>Shape Of You</p>
+              <p>ED sheeran</p>
+            </div>
+            <!-- like icon -->
+            <i class="far fa-heart"></i>
+            <!-- add to favourites icon -->
+            <i class="fas fa-plus"></i>
+
+          </div>
+          <!-- song -->
+          <div class="sg flex-row">
+            <p>04</p>
+            <!-- artists image -->
+            <img src="images/shape of you.png" alt="">
+            <!-- song name and name of aritsts -->
+            <div class="song-name-date">
+              <p>Shape Of You</p>
+              <p>ED sheeran</p>
+            </div>
+            <!-- like icon -->
+            <i class="far fa-heart"></i>
+            <!-- add to favourites icon -->
+            <i class="fas fa-plus"></i>
+
+          </div>
+          <!-- song -->
+          <div class="sg flex-row">
+            <p>05</p>
+            <!-- artists image -->
+            <img src="images/shape of you.png" alt="">
+            <!-- song name and name of aritsts -->
+            <div class="song-name-date">
+              <p>Shape Of You</p>
+              <p>ED sheeran</p>
+            </div>
+            <!-- like icon -->
+            <i class="far fa-heart"></i>
+            <!-- add to favourites icon -->
+            <i class="fas fa-plus"></i>
+
+          </div>
+          <!-- song -->
+          <div class="sg flex-row">
+            <p>06</p>
+            <!-- artists image -->
+            <img src="images/shape of you.png" alt="">
+            <!-- song name and name of aritsts -->
+            <div class="song-name-date">
+              <p>Shape Of You</p>
+              <p>ED sheeran</p>
+            </div>
+            <!-- like icon -->
+            <i class="far fa-heart"></i>
+            <!-- add to favourites icon -->
+            <i class="fas fa-plus"></i>
+
+          </div>
+          <!-- song -->
+          <div class="sg flex-row">
+            <p>07</p>
+            <!-- artists image -->
+            <img src="images/shape of you.png" alt="">
+            <!-- song name and name of aritsts -->
+            <div class="song-name-date">
+              <p>Shape Of You</p>
+              <p>ED sheeran</p>
+            </div>
+            <!-- like icon -->
+            <i class="far fa-heart"></i>
+            <!-- add to favourites icon -->
+            <i class="fas fa-plus"></i>
+
+          </div>
+          <!-- song -->
+          <div class="sg flex-row">
+            <p>08</p>
+            <!-- artists image -->
+            <img src="images/shape of you.png" alt="">
+            <!-- song name and name of aritsts -->
+            <div class="song-name-date">
+              <p>Shape Of You</p>
+              <p>ED sheeran</p>
+            </div>
+            <!-- like icon -->
+            <i class="far fa-heart"></i>
+            <!-- add to favourites icon -->
+            <i class="fas fa-plus"></i>
+
+          </div>
+
+        </section>
+      </section>
+      <!-- aside section for recently played and similar artists section -->
+      <aside>
+        <!-- div for all the content of aside  -->
+        <div class="aside-content flex-col">
+          <!-- section heading of similar artists -->
+          <div class="section-heading">
+            Similar Aritsts
+          </div>
+          <!-- similar artists section -->
+          <section class = "aside-section similar-artists flex-col">
+            <!-- song -->
+            <div class="sa-songs">
+              <!-- song picture with hoverable play button -->
+              <div class="song-pic play-button">
+                <img src="images/shape of you.png" alt="">
+                <i class="fas fa-play"></i>
+              </div>
+              <!-- song name and release date -->
+              <div class="song-name-date">
+                <p>Onism</p>
+                <p>aug 11,2017</p>
+              </div>
+              <!-- song play time and hoverable options  -->
+              <div class="song-time-options">
+                <i class="fas fa-ellipsis-h options-button">
+                  <div class="options">
+                    <!-- options in table format -->
+                    <table>
+                      <tr>
+                        <td><i class="fas fa-play"></i>Play Now</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-plus"></i>Add to queue</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-thumbs-up"></i>Add to favorites</td>
+                      </tr>
+                      <tr>
+                        <td><i class="far fa-question-circle"></i>Get Info</td>
+                      </tr>
+                    </table>
+                  </div>
+                </i>
+                <p>4:44</p>
+
+              </div>
+
+            </div>
+            <!-- song -->
+            <div class="sa-songs">
+              <!-- song picture with hoverable play button -->
+              <div class="song-pic play-button">
+                <img src="images/shape of you.png" alt="">
+                <i class="fas fa-play"></i>
+              </div>
+              <!-- song name and release date -->
+              <div class="song-name-date">
+                <p>Onism</p>
+                <p>aug 11,2017</p>
+              </div>
+              <!-- song play time and hoverable options  -->
+              <div class="song-time-options">
+                <i class="fas fa-ellipsis-h options-button">
+                  <div class="options">
+                    <!-- options in table format -->
+                    <table>
+                      <tr>
+                        <td><i class="fas fa-play"></i>Play Now</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-plus"></i>Add to queue</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-thumbs-up"></i>Add to favorites</td>
+                      </tr>
+                      <tr>
+                        <td><i class="far fa-question-circle"></i>Get Info</td>
+                      </tr>
+                    </table>
+                  </div>
+                </i>
+                <p>4:44</p>
+
+              </div>
+
+            </div>
+            <!-- song -->
+            <div class="sa-songs">
+              <!-- song picture with hoverable play button -->
+              <div class="song-pic play-button">
+                <img src="images/shape of you.png" alt="">
+                <i class="fas fa-play"></i>
+              </div>
+              <!-- song name and release date -->
+              <div class="song-name-date">
+                <p>Onism</p>
+                <p>aug 11,2017</p>
+              </div>
+              <!-- song play time and hoverable options  -->
+              <div class="song-time-options">
+                <i class="fas fa-ellipsis-h options-button">
+                  <div class="options">
+                    <!-- options in table format -->
+                    <table>
+                      <tr>
+                        <td><i class="fas fa-play"></i>Play Now</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-plus"></i>Add to queue</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-thumbs-up"></i>Add to favorites</td>
+                      </tr>
+                      <tr>
+                        <td><i class="far fa-question-circle"></i>Get Info</td>
+                      </tr>
+                    </table>
+                  </div>
+                </i>
+                <p>4:44</p>
+
+              </div>
+
+            </div>
+            <!-- song -->
+            <div class="sa-songs">
+              <!-- song picture with hoverable play button -->
+              <div class="song-pic play-button">
+                <img src="images/shape of you.png" alt="">
+                <i class="fas fa-play"></i>
+              </div>
+              <!-- song name and release date -->
+              <div class="song-name-date">
+                <p>Onism</p>
+                <p>aug 11,2017</p>
+              </div>
+              <!-- song play time and hoverable options  -->
+              <div class="song-time-options">
+                <i class="fas fa-ellipsis-h options-button">
+                  <div class="options">
+                    <!-- options in table format -->
+                    <table>
+                      <tr>
+                        <td><i class="fas fa-play"></i>Play Now</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-plus"></i>Add to queue</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-thumbs-up"></i>Add to favorites</td>
+                      </tr>
+                      <tr>
+                        <td><i class="far fa-question-circle"></i>Get Info</td>
+                      </tr>
+                    </table>
+                  </div>
+                </i>
+                <p>4:44</p>
+
+              </div>
+
+            </div>
+            <!-- song -->
+            <div class="sa-songs">
+              <!-- song picture with hoverable play button -->
+              <div class="song-pic play-button">
+                <img src="images/shape of you.png" alt="">
+                <i class="fas fa-play"></i>
+              </div>
+              <!-- song name and release date -->
+              <div class="song-name-date">
+                <p>Onism</p>
+                <p>aug 11,2017</p>
+              </div>
+              <!-- song play time and hoverable options  -->
+              <div class="song-time-options">
+                <i class="fas fa-ellipsis-h options-button">
+                  <div class="options">
+                    <!-- options in table format -->
+                    <table>
+                      <tr>
+                        <td><i class="fas fa-play"></i>Play Now</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-plus"></i>Add to queue</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-thumbs-up"></i>Add to favorites</td>
+                      </tr>
+                      <tr>
+                        <td><i class="far fa-question-circle"></i>Get Info</td>
+                      </tr>
+                    </table>
+                  </div>
+                </i>
+                <p>4:44</p>
+
+              </div>
+
+            </div>
+            <!-- song -->
+            <div class="sa-songs">
+              <!-- song picture with hoverable play button -->
+              <div class="song-pic play-button">
+                <img src="images/shape of you.png" alt="">
+                <i class="fas fa-play"></i>
+              </div>
+              <!-- song name and release date -->
+              <div class="song-name-date">
+                <p>Onism</p>
+                <p>aug 11,2017</p>
+              </div>
+              <!-- song play time and hoverable options  -->
+              <div class="song-time-options">
+                <i class="fas fa-ellipsis-h options-button">
+                  <div class="options">
+                    <!-- options in table format -->
+                    <table>
+                      <tr>
+                        <td><i class="fas fa-play"></i>Play Now</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-plus"></i>Add to queue</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-thumbs-up"></i>Add to favorites</td>
+                      </tr>
+                      <tr>
+                        <td><i class="far fa-question-circle"></i>Get Info</td>
+                      </tr>
+                    </table>
+                  </div>
+                </i>
+                <p>4:44</p>
+
+              </div>
+
+            </div>
+          </section>
+          <!-- recently played section heading -->
+          <div class="section-heading">
+            Recently Played
+          </div>
+          <!-- recently played section -->
+          <section class="aside-section recently-played flex-col">
+            <!-- song -->
+            <div class="rp-songs flex-row">
+              <p>01</p>
+              <!-- song image with hoverable play button -->
+              <div class="song-pic play-button">
+                <img src="images/erys.jpg" alt="">
+                <i class="fas fa-play"></i>
+              </div>
+              <!-- song name and artists name -->
+              <div class="song-name-date">
+                <p>ERYS</p>
+                <p>Jaden</p>
+              </div>
+              <!-- like icon -->
+              <i class="far fa-heart"></i>
+            </div>
+
+            <!-- song -->
+            <div class="rp-songs flex-row">
+              <p>01</p>
+              <!-- song image with hoverable play button -->
+              <div class="song-pic play-button">
+                <img src="images/erys.jpg" alt="">
+                <i class="fas fa-play"></i>
+              </div>
+              <!-- song name and artists name -->
+              <div class="song-name-date">
+                <p>ERYS</p>
+                <p>Jaden</p>
+              </div>
+              <!-- like icon -->
+              <i class="far fa-heart"></i>
+            </div>
+
+            <!-- song -->
+            <div class="rp-songs flex-row">
+              <p>01</p>
+              <!-- song image with hoverable play button -->
+              <div class="song-pic play-button">
+                <img src="images/erys.jpg" alt="">
+                <i class="fas fa-play"></i>
+              </div>
+              <!-- song name and artists name -->
+              <div class="song-name-date">
+                <p>ERYS</p>
+                <p>Jaden</p>
+              </div>
+              <!-- like icon -->
+              <i class="far fa-heart"></i>
+            </div>
+
+            <!-- song -->
+            <div class="rp-songs flex-row">
+              <p>01</p>
+              <!-- song image with hoverable play button -->
+              <div class="song-pic play-button">
+                <img src="images/erys.jpg" alt="">
+                <i class="fas fa-play"></i>
+              </div>
+              <!-- song name and artists name -->
+              <div class="song-name-date">
+                <p>ERYS</p>
+                <p>Jaden</p>
+              </div>
+              <!-- like icon -->
+              <i class="far fa-heart"></i>
+            </div>
+
+            <!-- song -->
+            <div class="rp-songs flex-row">
+              <p>01</p>
+              <!-- song image with hoverable play button -->
+              <div class="song-pic play-button">
+                <img src="images/erys.jpg" alt="">
+                <i class="fas fa-play"></i>
+              </div>
+              <!-- song name and artists name -->
+              <div class="song-name-date">
+                <p>ERYS</p>
+                <p>Jaden</p>
+              </div>
+              <!-- like icon -->
+              <i class="far fa-heart"></i>
+            </div>
+
+            <!-- song -->
+            <div class="rp-songs flex-row">
+              <p>01</p>
+              <!-- song image with hoverable play button -->
+              <div class="song-pic play-button">
+                <img src="images/erys.jpg" alt="">
+                <i class="fas fa-play"></i>
+              </div>
+              <!-- song name and artists name -->
+              <div class="song-name-date">
+                <p>ERYS</p>
+                <p>Jaden</p>
+              </div>
+              <!-- like icon -->
+              <i class="far fa-heart"></i>
+            </div>
+
+            <!-- song -->
+            <div class="rp-songs flex-row">
+              <p>01</p>
+              <!-- song image with hoverable play button -->
+              <div class="song-pic play-button">
+                <img src="images/erys.jpg" alt="">
+                <i class="fas fa-play"></i>
+              </div>
+              <!-- song name and artists name -->
+              <div class="song-name-date">
+                <p>ERYS</p>
+                <p>Jaden</p>
+              </div>
+              <!-- like icon -->
+              <i class="far fa-heart"></i>
+            </div>
+          </section>
+        </div>
+
+
+      </aside>
+
+    </main>
+    <footer class = "flex-row">
+      <!-- div for image and options for music being played -->
+      <div class="music-picked">
+        <!-- image of the song -->
+        <img src="images/south side.jpg">
+        <!-- song name and its release date -->
+        <div class="song-name-date">
+          <p>South side</p>
+          <p>aug 11,2017</p>
+        </div>
+        <!-- like and dislike icons -->
+        <div class="like-dislike">
+          <i class="far fa-heart"></i>
+          <i class="far fa-times-circle"></i>
+        </div>
+      </div>
+
+      <!-- div for play pause forward backward sync and slider for song are present -->
+      <div class="play-control">
+        <div class="controls">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="far fa-pause-circle"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fas fa-sync"></i>
+        </div>
+        <!-- slider for indicating part of song remaining -->
+        <div class="slider flex-row">
+          <form action="index.html" method="post" class = "flex-row">
+            <p>1:34</p>
+            <input id = "s" type="range" name="points" min = "0" max = "4">
+            <p>4:44</p>
+          </form>
+        </div>
+      </div>
+
+      <!-- div for volume controls,desktop icon,icons for increasing volume etc -->
+      <div class="volume-control">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-desktop"></i>
+        <i class="fas fa-volume-up v"></i>
+        <!-- slider to indicate current volume for the song -->
+        <div class="volume-slider flex-row">
+          <form action="index.html" method="post" class = "flex-row">
+            <input id = "vs" type="range" name="points" min = "0" max = "4">
+          </form>
+        </div>
+        <i class="fas fa-expand"></i>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Music player</title>
+    <link rel="shortcut icon" href="images/musicIcon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:300|Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Inconsolata|Noto+Serif|Slabo+27px|Varela+Round&display=swap" rel="stylesheet">
+  </head>
+  <body class = "flex-col">
+    <!-- header for navigation bar -->
+    <header>
+      <nav>
+        <ul class = "navigation-bar flex-row align-items-center">
+        <!-- ninja sudio symbol -->
+        <li class="ninja-studio-symbol">
+          <i class="fas fa-drum"></i>
+          <span>Ninja Studio</span>
+        </li>
+        <!-- temporary search icon becomes visible in small screens -->
+        <i class="fas fa-search" id = "search-icon"></i>
+        <!-- search panel for rest of the screens -->
+        <li class="search-panel">
+          <form class="header-search-form">
+            <button type="submit" name="button"><i class="fas fa-search"></i></button>
+            <input type="search" name="header-search" id = "header-search" placeholder="Search">
+            <button type="search" name="voice-search-button"><i class="fas fa-microphone"></i></button>
+          </form>
+        </li>
+        <!-- notification bell icon -->
+        <li class="bell-icon">
+          <form class="notification-bell">
+            <button type="button" name="button"><i class="fas fa-bell"></i></button>
+          </form>
+        </li>
+        <!-- user profile image -->
+        <li class="user-profile">
+          <img src="images/rletter.jpg" alt="profile image">
+
+        </li>
+        <!-- icon to access aside section as it becomes hidden -->
+        <li class = "aside-access-icon">
+            <i class="fas fa-bars"></i>
+        </li>
+      </ul>
+    </nav>
+    </header>
+
+    <!-- main section for various section and aside section -->
+    <main class = "flex-row">
+      <section id = "main-content" class = "flex-col align-items-center">
+        <!-- displays section consists of three images-->
+        <section id = "display-section" class = "flex-row align-items-center">
+          <div class="display-image one" id = "first">
+            <img src="images/Mood-Boosters.jpg">
+          </div>
+          <div class="display-image" id = "second">
+            <img src="images/xyz.jpg">
+          </div>
+          <div class="display-image two" id = "third">
+            <img src="images/edm.jpg">
+          </div>
+        </section>
+        <!-- section heading for latest release section -->
+        <span class = "section-heading">Latest Release</span>
+        <!-- latest release section -->
+        <section id = "latest-release" class="flex-col">
+          <!-- first row of section -->
+          <div class="row1 flex-row">
+            <!-- song -->
+            <div class="songs">
+              <!-- song image with hoverable play button -->
+              <div class="song-image play-button">
+                <i class="fas fa-play"></i>
+                <img src="images/onism.jpg">
+              </div>
+              <!-- song detail -->
+              <span class="song-detail">
+                <div class="song-name-date">
+                  <p>Onism</p>
+                  <p>Aug 11,2017</p>
+                </div>
+                <!-- song options for and time -->
+                <div class="song-time-options">
+                  <!-- options in the form of table -->
+                  <i class="fas fa-ellipsis-h options-button">
+                    <div class="options">
+                      <table>
+                        <tr>
+                          <td><i class="fas fa-play"></i>Play Now</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-plus"></i>Add to queue</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-thumbs-up"></i>Add to favorites</td>
+                        </tr>
+                        <tr>
+                          <td><i class="far fa-question-circle"></i>Get Info</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </i>
+                  <p>4:44</p>
+
+                </div>
+              </span>
+            </div>
+            <!-- song -->
+            <div class="songs">
+              <!-- song image with hoverable play button -->
+              <div class="song-image play-button">
+                <i class="fas fa-play"></i>
+                <img src="images/onism.jpg">
+              </div>
+              <!-- song detail -->
+              <span class="song-detail">
+                <div class="song-name-date">
+                  <p>Onism</p>
+                  <p>Aug 11,2017</p>
+                </div>
+                <!-- song options for and time -->
+                <div class="song-time-options">
+                  <!-- options in the form of table -->
+                  <i class="fas fa-ellipsis-h options-button">
+                    <div class="options">
+                      <table>
+                        <tr>
+                          <td><i class="fas fa-play"></i>Play Now</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-plus"></i>Add to queue</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-thumbs-up"></i>Add to favorites</td>
+                        </tr>
+                        <tr>
+                          <td><i class="far fa-question-circle"></i>Get Info</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </i>
+                  <p>4:44</p>
+
+                </div>
+              </span>
+            </div>
+          </div>
+          <!-- second row of the section -->
+          <div class="row2 flex-row">
+            <!-- song -->
+            <div class="songs">
+              <!-- song image with hoverable play button -->
+              <div class="song-image play-button">
+                <i class="fas fa-play"></i>
+                <img src="images/onism.jpg">
+              </div>
+              <!-- song detail -->
+              <span class="song-detail">
+                <div class="song-name-date">
+                  <p>Onism</p>
+                  <p>Aug 11,2017</p>
+                </div>
+                <!-- song options for and time -->
+                <div class="song-time-options">
+                  <!-- options in the form of table -->
+                  <i class="fas fa-ellipsis-h options-button">
+                    <div class="options">
+                      <table>
+                        <tr>
+                          <td><i class="fas fa-play"></i>Play Now</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-plus"></i>Add to queue</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-thumbs-up"></i>Add to favorites</td>
+                        </tr>
+                        <tr>
+                          <td><i class="far fa-question-circle"></i>Get Info</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </i>
+                  <p>4:44</p>
+
+                </div>
+              </span>
+            </div>
+            <!-- song -->
+            <div class="songs">
+              <!-- song image with hoverable play button -->
+              <div class="song-image play-button">
+                <i class="fas fa-play"></i>
+                <img src="images/onism.jpg">
+              </div>
+              <!-- song detail -->
+              <span class="song-detail">
+                <div class="song-name-date">
+                  <p>Onism</p>
+                  <p>Aug 11,2017</p>
+                </div>
+                <!-- song options for and time -->
+                <div class="song-time-options">
+                  <i class="fas fa-ellipsis-h options-button">
+                    <div class="options">
+                      <table>
+                        <tr>
+                          <td><i class="fas fa-play"></i>Play Now</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-plus"></i>Add to queue</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-thumbs-up"></i>Add to favorites</td>
+                        </tr>
+                        <tr>
+                          <td><i class="far fa-question-circle"></i>Get Info</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </i>
+                  <p>4:44</p>
+
+                </div>
+              </span>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- section heading for popular artists section -->
+        <span class = "section-heading">Popular Artists</span>
+        <!-- popular artists section -->
+        <section id = "popular-artists" class="flex-row">
+          <!-- artist -->
+          <a target = "_blank" href="artist page/artist.html">
+            <!-- artist div for hoverable play button -->
+            <div class="artist play-button flex-col align-items-center">
+              <!-- artist image -->
+              <img src="images/Marshmello.jpg" alt="Marshmello singer">
+              <span>Marshmello</span>
+                <i class="fas fa-play"></i>
+            </div>
+          </a>
+          <!-- artist -->
+          <a target = "_blank" href="artist page/artist.html">
+            <!-- artist div for hoverable play button -->
+            <div class="artist play-button flex-col align-items-center">
+              <!-- artist image -->
+              <img src="images/Rihanna.jpg" alt="Rihanna singer">
+              <span>Rihanna</span>
+                <i class="fas fa-play"></i>
+            </div>
+          </a>
+          <!-- artist -->
+          <a target = "_blank" href="artist page/artist.html">
+            <!-- artist div for hoverable play button -->
+            <div class="artist play-button flex-col align-items-center">
+              <!-- artist image -->
+              <img src="images/Ed sheeran.jpg" alt="Ed sheeran singer">
+              <span>Ed Sheeran</span>
+                <i class="fas fa-play"></i>
+            </div>
+          </a>
+          <!-- artist -->
+          <a target = "_blank" href="artist page/artist.html">
+            <!-- artist div for hoverable play button -->
+            <div class="artist play-button flex-col align-items-center">
+              <!-- artist image -->
+              <img src="images/Lady_Gaga.jpg" alt="Lady gaga singer">
+              <span>Lady Gaga</span>
+                <i class="fas fa-play"></i>
+            </div>
+          </a>
+          <!-- artist -->
+          <a target = "_blank" href="artist page/artist.html">
+            <!-- artist div for hoverable play button -->
+            <div class="artist play-button flex-col align-items-center">
+              <!-- artist image -->
+              <img src="images/Nick-jonas.jpg" alt="Nick Jonas singer">
+              <span>Nick Jonas</span>
+                <i class="fas fa-play"></i>
+            </div>
+          </a>
+          <!-- artist -->
+          <a target = "_blank" href="artist page/artist.html" class="two">
+            <!-- artist div for hoverable play button -->
+            <div class="artist play-button flex-col align-items-center">
+              <!-- artist image -->
+              <img src="images/ariana-grande.jpg" alt="Ariana Grande singer">
+              <span>Ariana</span>
+
+                <i class="fas fa-play"></i>
+
+            </div>
+          </a>
+
+
+        </section>
+
+        <!-- music stations section -->
+
+        <section id = "music-stations" class = "flex-row align-items-center">
+          <!-- station heading -->
+          <div class="station-display">
+            <img src="images/music-station-icon.png">
+            <span>Stations</span>
+          </div>
+          <!-- station -->
+          <div class="station">
+            <!-- station image and its name -->
+            <img src="images/retro1.jpg" alt="Retro">
+            <span>Retro</span>
+          </div>
+          <!-- station -->
+          <div class="station">
+            <!-- station image and its name -->
+            <img src="images/love.jpg" alt="Love">
+            <span>Love</span>
+          </div>
+          <!-- station -->
+          <div class="station" id = "workout">
+            <!-- station image and its name -->
+            <img src="images/workout.jpg" alt="Workout">
+            <span>Workout</span>
+          </div>
+          <!-- station -->
+          <div class="station">
+            <!-- station image and its name -->
+            <img src="images/rock.jpg" alt="Rock">
+            <span>Rock</span>
+          </div>
+          <!-- station -->
+          <div class="station">
+            <!-- station image and its name -->
+            <img src="images/pop.jpg" alt="Pop">
+            <span>Pop</span>
+          </div>
+          <!-- station -->
+          <div class="station">
+            <!-- station image and its name -->
+            <img src="images/chill.jpg" alt="Chill">
+            <span>Chill</span>
+          </div>
+        </section>
+
+        <!-- music type section -->
+        <section id = "music-type" class="flex-row">
+          <!-- music -->
+          <div class="music party one flex-row align-items-center">
+            <span>Party</span>
+          </div>
+          <!-- music -->
+          <div class="music electronic flex-row align-items-center">
+            <span>Electronic</span>
+          </div>
+          <!-- music -->
+          <div class="music road-trip two flex-row align-items-center">
+            <span>Road Trip</span>
+          </div>
+        </section>
+
+        <!-- section heading for latest engilish section -->
+        <span class = "section-heading">Latest English</span>
+        <!-- latest English section -->
+        <section id = "latest-english" class =  "flex-row">
+          <!-- song -->
+          <div class="holywood-song flex-col">
+            <!-- song image name and its release date -->
+            <img src="images/believer.jpg" alt="">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+            </div>
+          </div>
+          <!-- song -->
+          <div class="holywood-song flex-col">
+            <!-- song image name and its release date -->
+            <img src="images/here with me.png" alt="">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+
+            </div>
+          </div>
+          <!-- song -->
+          <div class="holywood-song flex-col">
+            <!-- song image name and its release date -->
+            <img src="images/I DONT CARE.jpg" alt="">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+
+            </div>
+          </div>
+          <!-- song -->
+          <div class="holywood-song flex-col">
+            <!-- song image name and its release date -->
+            <img src="images/south side.jpg" alt="">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+
+            </div>
+          </div>
+          <!-- song -->
+          <div class="holywood-song flex-col">
+            <!-- song image name and its release date -->
+            <img src="images/calma.jpg" alt="">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- section heading for latest hindi section -->
+        <span class = "section-heading">Latest Hindi</span>
+        <!-- latest hindi seciton -->
+        <section id = "latest-hindi" class="flex-row">
+        <!-- song -->
+        <div class="holywood-song flex-col">
+          <!-- song image name and its release date -->
+          <img src="images/believer.jpg" alt="">
+          <div class="song-name-date">
+            <p>Onism</p>
+            <p>Aug 11,2017</p>
+
+          </div>
+        </div>
+        <!-- song -->
+        <div class="holywood-song flex-col">
+          <!-- song image name and its release date -->
+          <img src="images/here with me.png" alt="">
+          <div class="song-name-date">
+            <p>Onism</p>
+            <p>Aug 11,2017</p>
+
+          </div>
+        </div>
+        <!-- song -->
+        <div class="holywood-song flex-col">
+          <!-- song image name and its release date -->
+          <img src="images/I DONT CARE.jpg" alt="">
+          <div class="song-name-date">
+            <p>Onism</p>
+            <p>Aug 11,2017</p>
+
+          </div>
+        </div>
+        <!-- song -->
+        <div class="holywood-song flex-col">
+          <!-- song image name and its release date -->
+          <img src="images/south side.jpg" alt="">
+          <div class="song-name-date">
+            <p>Onism</p>
+            <p>Aug 11,2017</p>
+
+          </div>
+        </div>
+        <!-- song -->
+        <div class="holywood-song flex-col">
+          <!-- song image name and its release date -->
+          <img src="images/calma.jpg" alt="">
+          <div class="song-name-date">
+            <p>Onism</p>
+            <p>Aug 11,2017</p>
+
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- aside section -->
+
+      <aside class="flex-col">
+        <!-- queue text with hoverable option list -->
+        <span class = "queue-text">
+          <span>Queue</span>
+          <span>
+            <p>Queue</p>
+            <i class="fas fa-angle-down options-button">
+              <div class="options">
+                <table>
+                  <tr>
+                    <td><i class="fas fa-play"></i>Playlists</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-thumbs-up"></i>Favorite Songs</td>
+                  </tr>
+                </table>
+              </div>
+            </i>
+          </span>
+        </span>
+        <!-- aside section with songs -->
+        <div class="aside-section flex-col">
+          <!-- song -->
+          <div class="queue-song align-items-center">
+            <p>01</p>
+            <!-- song image name and its release date -->
+            <img src="images/believer.jpg">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+
+          <!-- song -->
+          <div class="queue-song align-items-center">
+            <p>02</p>
+            <!-- song image name and its release date -->
+            <img src="images/believer.jpg">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+
+          <!-- song -->
+          <div class="queue-song align-items-center">
+            <p>03</p>
+            <!-- song image name and its release date -->
+            <img src="images/believer.jpg">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+
+          <!-- song -->
+          <div class="queue-song align-items-center">
+            <p>04</p>
+            <!-- song image name and its release date -->
+            <img src="images/believer.jpg">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+
+          <!-- song -->
+          <div class="queue-song align-items-center">
+            <p>05</p>
+            <!-- song image name and its release date -->
+            <img src="images/believer.jpg">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+
+          <!-- song -->
+          <div class="queue-song align-items-center">
+            <p>06</p>
+            <!-- song image name and its release date -->
+            <img src="images/believer.jpg">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+
+          <!-- song -->
+          <div class="queue-song align-items-center">
+            <p>07</p>
+            <!-- song image name and its release date -->
+            <img src="images/believer.jpg">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+
+          <!-- song -->
+          <div class="queue-song align-items-center">
+            <p>08</p>
+            <!-- song image name and its release date -->
+            <img src="images/believer.jpg">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+
+          <!-- song -->
+          <div class="queue-song align-items-center">
+            <p>09</p>
+            <!-- song image name and its release date -->
+            <img src="images/believer.jpg">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+
+          <!-- song -->
+          <div class="queue-song align-items-center">
+            <p>10</p>
+            <!-- song image name and its release date -->
+            <img src="images/believer.jpg">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+
+          <!-- song -->
+          <div class="queue-song align-items-center">
+            <p>11</p>
+            <!-- song image name and its release date -->
+            <img src="images/believer.jpg">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+
+          <!-- song -->
+          <div class="queue-song align-items-center">
+            <p>12</p>
+            <!-- song image name and its release date -->
+            <img src="images/believer.jpg">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+
+          <!-- song -->
+          <div class="queue-song align-items-center">
+            <p>13</p>
+            <!-- song image name and its release date -->
+            <img src="images/believer.jpg">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+
+          <!-- song -->
+          <div class="queue-song align-items-center">
+            <p>14</p>
+            <!-- song image name and its release date -->
+            <img src="images/believer.jpg">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+
+          <!-- song -->
+          <div class="queue-song align-items-center">
+            <p>15</p>
+            <!-- song image name and its release date -->
+            <img src="images/believer.jpg">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+
+          <!-- song -->
+          <div class="queue-song align-items-center">
+            <p>16</p>
+            <!-- song image name and its release date -->
+            <img src="images/believer.jpg">
+            <div class="song-name-date">
+              <p>Onism</p>
+              <p>Aug 11,2017</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+      </aside>
+
+    </main>
+
+    <!-- footer for song to be played -->
+
+    <footer class="flex-row">
+      <!-- div for image and options for music being played -->
+      <div class="music-picked align-items-center">
+        <!-- image of the song -->
+        <img src="images/south side.jpg">
+        <!-- song name and its release date -->
+        <div class="song-name-date">
+          <p>South side</p>
+          <p>aug 11,2017</p>
+        </div>
+        <!-- like and dislike icons -->
+        <div class="like-dislike">
+          <i class="far fa-heart"></i>
+          <i class="far fa-times-circle"></i>
+        </div>
+      </div>
+
+      <!-- div for play pause forward backward sync and slider for song are present -->
+      <div class="play-control align-items-center">
+        <div class="controls">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="far fa-pause-circle"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fas fa-sync"></i>
+        </div>
+        <!-- slider for indicating part of song remaining -->
+        <div class="slider flex-row">
+          <form action="index.html" method="post" class="align-items-center">
+            <p>1:34</p>
+            <input id = "s" type="range" name="points" min = "0" max = "4">
+            <p>4:44</p>
+          </form>
+        </div>
+      </div>
+      <!-- div for volume controls,desktop icon,icons for increasing volume etc -->
+      <div class="volume-control align-items-center">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-desktop"></i>
+        <i class="fas fa-volume-up v"></i>
+        <!-- slider to indicate current volume for the song -->
+        <div class="volume-slider">
+          <form action="index.html" method="post" class="align-items-center">
+            <input id = "vs" type="range" name="points" min = "0" max = "4">
+          </form>
+        </div>
+        <i class="fas fa-expand"></i>
+      </div>
+    </footer>
+
+  </body>
+</html>
